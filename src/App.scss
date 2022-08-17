@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+}
+.Todo_main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  padding-top: 2rem;
+  justify-content: space-evenly;
+  background-color: rgb(248 248 248);
+
+  .Todo_Left {
+    width: 20%;
+    min-height: 80vh;
+    background-color: #fff;
+    box-shadow: rgb(90 113 208 / 11%) 0px 0px 0px 0px,
+      rgb(167 175 183 / 33%) 0px 4px 16px 0px;
+    padding: 1rem 0rem;
+
+    // Input styole
+    .Listitem_input {
+      border: none;
+      outline: none;
+    }
+    .list_item {
+      &:hover .Listitem_input {
+        background-color: rgb(248 248 248);
+      }
+    }
+  }
+
+  .Todo_Right {
+    width: 70%;
+    height: 40vh;
+    background-color: #fff;
+    box-shadow: rgb(90 113 208 / 11%) 0px 0px 0px 0px,
+      rgb(167 175 183 / 33%) 0px 4px 16px 0px;
+
+    .TodoRight_Head {
+      display: flex;
+      align-items: center;
+      margin: 1rem 0rem;
+
+      .TodoRight_Headnaem {
+        margin-left: 2rem;
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+      .Todoright_headicon {
+        font-size: 1.4rem;
+        cursor: pointer;
+        color: #767678;
+        margin-left: 1rem;
+      }
+    }
+
+    //Right task box
+    .TodoRight_TaskMain {
+      background-color: #fff;
+    }
+  }
+}

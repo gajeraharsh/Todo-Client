@@ -1,0 +1,84 @@
+.Task {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid rgb(229, 229, 229);
+  padding: 1rem;
+  cursor: pointer;
+
+  .Task_left {
+    flex: 1;
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+
+    .TaskLeft_check {
+      margin-right: 0.5rem;
+      width: 1rem;
+      height: 1rem;
+      cursor: pointer;
+    }
+    .TaskLeft_name {
+      font-size: 1.1rem;
+      color: #343a40;
+      font-weight: 500;
+      margin-left: 0.5rem;
+      transition: 0.2s ease-in-out;
+      &.TaskLeft_Over {
+        text-decoration: line-through;
+        transition: 0.2s ease-in-out;
+      }
+    }
+  }
+  .Task_right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 2rem;
+
+    .Task_icon {
+      font-size: 1.4rem;
+      cursor: pointer;
+      color: #767678;
+      margin: 0rem 0.2rem;
+    }
+  }
+
+  &:hover {
+    background-color: rgb(248 248 248);
+  }
+}
+
+// input task
+
+.TaskInput_main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid rgb(229, 229, 229);
+  padding: 1rem;
+  cursor: pointer;
+
+  .TaskInput_Wrapper {
+    flex: 1;
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+
+    .TaskInput_icondiv {
+      margin-right: 0.7rem;
+      display: flex;
+      align-items: center;
+      .TaskInput_Icon {
+        font-size: 1.2rem;
+        color: #767678;
+      }
+    }
+    .Task_Input {
+      width: 96%;
+      border: none;
+      outline: none;
+    }
+  }
+}
