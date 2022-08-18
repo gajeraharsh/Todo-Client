@@ -5,24 +5,27 @@
   border-top: 1px solid rgb(229, 229, 229);
   padding: 1rem;
   cursor: pointer;
-
+  position: relative;
+  .TaskLeft_check {
+    margin-right: 0.5rem;
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+    position: absolute;
+    left: 3rem;
+    z-index: 2;
+  }
   .Task_left {
-    flex: 1;
+    flex: 2;
     margin-left: 2rem;
     display: flex;
     align-items: center;
 
-    .TaskLeft_check {
-      margin-right: 0.5rem;
-      width: 1rem;
-      height: 1rem;
-      cursor: pointer;
-    }
     .TaskLeft_name {
       font-size: 1.1rem;
       color: #343a40;
       font-weight: 500;
-      margin-left: 0.5rem;
+      margin-left: 2rem;
       transition: 0.2s ease-in-out;
       &.TaskLeft_Over {
         text-decoration: line-through;

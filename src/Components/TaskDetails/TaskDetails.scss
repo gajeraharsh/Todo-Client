@@ -1,0 +1,86 @@
+.TaskDetail_main {
+  width: 100%;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 3;
+
+  .TaskBox_main {
+    width: 40%;
+
+    background-color: #fff;
+    padding: 1rem;
+
+    .Taskbox {
+      background-color: #f4f4f4;
+
+      .Task_Step_head {
+        display: flex;
+        padding: 1rem;
+        justify-content: space-around;
+        align-items: center;
+
+        .Taskhead_checkbox {
+          width: 1rem;
+          height: 1rem;
+        }
+
+        .TaskHead_name {
+          width: 80%;
+          margin-left: 0.8rem;
+        }
+        .taskhead_icon {
+          font-size: 1.2rem;
+          cursor: pointer;
+          margin: 0.2rem;
+        }
+      }
+      .StepInput_main {
+        display: flex;
+        padding: 1rem;
+        align-items: center;
+
+        .TaskHead_name {
+          flex: 1 1;
+          margin-left: 0.5rem;
+          height: 1.3rem;
+          border: none;
+          outline: none;
+          background-color: #f4f4f4;
+        }
+      }
+      .StepItem_wraper {
+        margin-top: 1.4rem;
+      }
+    }
+    .TaskDetail_icon_div {
+      margin-top: 5rem;
+      float: right;
+      .TaskDetail_icon {
+        color: red;
+        cursor: pointer;
+        font-size: 1.2rem;
+      }
+    }
+  }
+  &.TaskDetail_main_false {
+    display: none;
+  }
+}
+.Asider {
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  opacity: 0.5;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+
+  &.Asider_false {
+    display: none;
+  }
+}

@@ -1,0 +1,23 @@
+.StepItem_main {
+  display: flex;
+  padding: 0 1rem;
+  align-items: center;
+
+  .Stepitem_naeme {
+    flex: 1 1;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+
+    &.Stepitem_naeme_true {
+      text-decoration: line-through;
+    }
+  }
+  .stepitem_check {
+    width: 1rem;
+    height: 1rem;
+    transition: all 0.3s;
+  }
+  .stepitme_icon {
+    cursor: pointer;
+  }
+}
